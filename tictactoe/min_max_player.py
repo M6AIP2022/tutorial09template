@@ -14,7 +14,7 @@ class MinMaxPlayer(Player):
         # for every possible move, add a pair of a min_max score and the move to a list scores.
         score_move_pairs = []
         for next_move in current_board.get_possible_moves():
-            next_score = self.min_max(current_board, next_move, self.mark)
+            next_score = self.min_max(current_board, next_move, mark)
             score_move_pairs.append((next_score, next_move))
         # if there is no score/move pair, return 0
 
